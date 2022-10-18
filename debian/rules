@@ -1,0 +1,14 @@
+#! /usr/bin/make -f
+
+export PYBUILD_NAME=routes
+%:
+	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
+
+override_dh_auto_build:
+	dh_auto_build
+	cd docs && \
+	PYTHONPATH=$(CURDIR) http_proxy='http://127.0.0.1:9' https_proxy='https://127.0.0.1:9' \
+	python3 -m sphinx -N -E -T -b html . $(CURDIR)/.pybuild/docs/html/
+
+override_dh_installchangelogs:
+	dh_installchangelogs CHANGELOG.rst

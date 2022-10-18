@@ -1,0 +1,33 @@
+From: SVN-Git Migration <python-modules-team@lists.alioth.debian.org>
+Date: Thu, 8 Oct 2015 13:43:58 -0700
+Subject: drop_changes_from_description
+
+Patch-Name: drop_changes_from_description.patch
+---
+ setup.py | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/setup.py b/setup.py
+index 5d97b11..99ee7b6 100644
+--- a/setup.py
++++ b/setup.py
+@@ -9,8 +9,8 @@ from setuptools import setup, find_packages
+ here = os.path.abspath(os.path.dirname(__file__))
+ with io.open(os.path.join(here, 'README.rst'), encoding='utf8') as f:
+     README = f.read()
+-with io.open(os.path.join(here, 'CHANGELOG.rst'), encoding='utf8') as f:
+-    CHANGES = f.read()
++#with io.open(os.path.join(here, 'CHANGELOG.rst'), encoding='utf8') as f:
++#    CHANGES = f.read()
+ PY3 = sys.version_info[0] == 3
+ 
+ extra_options = {
+@@ -33,7 +33,7 @@ if PY3:
+ setup(name="Routes",
+       version=__version__,
+       description='Routing Recognition and Generation Tools',
+-      long_description=README + '\n\n' + CHANGES,
++      long_description=README,
+       classifiers=["Development Status :: 5 - Production/Stable",
+                    "Intended Audience :: Developers",
+                    "License :: OSI Approved :: MIT License",

@@ -1,0 +1,349 @@
+routes (2.5.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+  * Standards-Version bumped to 4.5.1 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 30 Dec 2020 18:08:50 +0100
+
+routes (2.4.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/watch: Use https protocol
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #938407
+
+ -- Sandro Tosi <morph@debian.org>  Sun, 19 Jan 2020 13:00:14 -0500
+
+routes (2.4.1-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop build-depends on python-webtest.
+
+ -- Peter Michael Green <plugwash@debian.org>  Sun, 22 Dec 2019 16:33:19 +0000
+
+routes (2.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Standards-Version bumped to 4.0.0 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 20 Jul 2017 20:35:37 +0200
+
+routes (2.3.1-2) unstable; urgency=medium
+
+  * Documentation is back (lost in last upload while rewriting debian/rules;
+    closes: 833047)
+  * Install CHANGELOG.rst as upstream changelog (closes: 833049)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 31 Jul 2016 13:36:49 +0200
+
+routes (2.3.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+  * debian/rules rewritten: now uses dh sequencer and pybuild
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 30 Jul 2016 22:56:34 +0200
+
+routes (2.2-1) unstable; urgency=medium
+
+  * New upstream release
+    - requires Sphinx >= 1.3 (also closes: 788972)
+    - add remove_missing_todo_include_from_docs patch
+  * Add python{,3}-six to Build-Depends (and Depends, via dh_python*)
+  * debian/watch: use pypi.debian.net redirector
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 16 Aug 2015 10:09:09 +0200
+
+routes (2.1-1) experimental; urgency=medium
+
+  * New upstream release
+    - drop_changes_from_description patch refreshed
+  * Homepage updated
+  * Standards-Version bumped to 3.9.6 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 18 Jan 2015 20:40:41 +0100
+
+routes (2.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Add drop_changes_from_description patch (to avoid FTBFS due to missing
+    encoding declaration which makes python3 setup.py fail)
+  * Bump minimum required Python version to 2.6/3.2
+  * Add dh-python to Build-Depends (and use dh-python's dh_python2)
+  * Standards-Version bumped to 3.9.5 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 01 Dec 2013 21:47:24 +0100
+
+routes (1.13-3) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Dmitrijs Ledkovs ]
+  * Team upload.
+  * Add python3 package (Closes: #714402)
+
+ -- Dmitrijs Ledkovs <dmitrij.ledkov@ubuntu.com>  Mon, 22 Jul 2013 23:17:43 +0100
+
+routes (1.13-2) unstable; urgency=low
+
+  [ David Prévot ]
+  * Add missing dependency on python-pkg-resources, thanks to Jakub Wilk
+    (closes: #684677)
+
+  [ Piotr Ożarowski ]
+  * Remove "build-docs" file in clean target to make sure docs are rebuilt and
+    available even if build process is invoked twice in a row (closes: #671389)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 26 Aug 2012 15:52:09 +0200
+
+routes (1.13-1) unstable; urgency=low
+
+  * New upstream release
+  * Switch from dh_pysupport to dh_python2
+  * Rebuild and install documentation
+    - python-sphinx added to Build-Depends
+  * Add build-arch and build-indep targets to debian/rules
+  * debhelper's compatibility bumped to 7
+  * debian/copyright updated
+  * Source format changed to 3.0 (quilt)
+  * Standards-Version bumped to 3.9.3 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 14 Mar 2012 21:32:21 +0100
+
+routes (1.12.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 07 Jun 2010 21:13:17 +0200
+
+routes (1.12.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 18 Mar 2010 22:16:22 +0100
+
+routes (1.12-1) unstable; urgency=low
+
+  * New upstream release
+  * Install CHANGELOG file as upstream changelog
+  * Standards-Version bumped to 3.8.4 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 01 Mar 2010 22:29:15 +0100
+
+routes (1.11-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-Version bumped to 3.8.3 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 28 Sep 2009 23:18:25 +0200
+
+routes (1.10.3-2) unstable; urgency=low
+
+  * Add python-webob to Recommends (closes: #515548)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 16 Feb 2009 20:27:07 +0100
+
+routes (1.10.3-1) unstable; urgency=low
+
+  * New upstream release (upload to unstable)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 09 Feb 2009 09:12:44 +0100
+
+routes (1.10.2-1) experimental; urgency=low
+
+  [ Sandro Tosi ]
+  * Switch Vcs-Browser field to viewsvn
+
+  [ Piotr Ożarowski ]
+  * New upstream release (upload to experimental due to Lenny freeze)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 12 Jan 2009 20:02:54 +0100
+
+routes (1.10.1-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Lenny freeze)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 28 Sep 2008 15:02:28 +0200
+
+routes (1.10-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Lenny freeze)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 25 Sep 2008 22:05:49 +0200
+
+routes (1.9.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Change license of my packaging efforts to BSD to match upstream
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 09 Jul 2008 20:37:32 +0200
+
+routes (1.9.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 29 Jun 2008 19:51:56 +0200
+
+routes (1.9-1) unstable; urgency=low
+
+  * New upstream release
+  * Long description updated
+  * Standards-Version bumped to 3.8.0 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 13 Jun 2008 23:14:40 +0200
+
+routes (1.8-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 28 Mar 2008 22:16:10 +0100
+
+routes (1.7.2-1) unstable; urgency=low
+
+  [ Sandro Tosi ]
+  * debian/control: uniforming Vcs-Browser field
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+  * 01_disable_ez_setup patch removed (fixed upstream)
+  * Switch from python-central to python-support
+  * Compress binary package with bzip2
+  * Strip the "-1" from setuptools' required version
+  * Bump Standards-Version to 3.7.3 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 27 Feb 2008 22:43:50 +0100
+
+routes (1.7.1-1) unstable; urgency=low
+
+  * New upstream release
+    - docs/changelogs are available only via website now
+  * Homepage field added
+  * Rename XS-Vcs-* fields to Vcs-* (dpkg supports them now)
+  * setuptools_version patch replaced with disable_ez_setup
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 17 Nov 2007 21:37:07 +0100
+
+routes (1.7-1) unstable; urgency=low
+
+  * New upstream release
+  * Added python-paste to Suggests (for Routes WSGI Middleware)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 09 Jun 2007 15:37:20 +0200
+
+routes (1.6.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 11 Apr 2007 18:06:25 +0200
+
+routes (1.6.2-2) unstable; urgency=low
+
+  * Upload to unstable
+  * Changed my address to piotr@debian.org
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 Apr 2007 17:04:20 +0200
+
+routes (1.6.2-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Sat,  6 Jan 2007 15:30:33 +0100
+
+routes (1.6.1-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Sat, 30 Dec 2006 19:18:27 +0100
+
+routes (1.6-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+  * Added XS-Vcs-Svn and XS-Vcs-Browser fields
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Fri, 15 Dec 2006 15:08:39 +0100
+
+routes (1.5.2-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules cleaned:
+    + dh_python removed, dh_pycentral will generate all data now
+    + unneeded dh_installexamples, dh_strip and dh_shlibdeps calls removed
+  * debian/control: bumped debhelper and python-central required versions due
+    to dh_python call removal
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Tue, 17 Oct 2006 17:31:20 +0200
+
+routes (1.5.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Thu,  5 Oct 2006 23:29:35 +0200
+
+routes (1.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Restored python-all-dev dependency (FTBFS on Ubuntu with python2.5)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Fri, 22 Sep 2006 11:39:37 +0200
+
+routes (1.4.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Replaced python-all-dev with python-all build requirement since header
+    files are not needed to build arch indep. modules
+  * Added patch to setup.py file which will force using currently installed
+    setuptools version while building package
+    + dpatch added to build dependencies
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Fri,  8 Sep 2006 15:33:54 +0200
+
+routes (1.4-2) unstable; urgency=low
+
+  * Removed bashism in build script (closes: #384817)
+  * Bumped python-central required version to 0.5 in order to satisfy lintian.
+  * Removed unneeded "build-python%" rules from debian/rules file
+  * Test files are not installed as examples anymore
+  * Added debian/pycompat file
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Sun, 27 Aug 2006 11:56:56 +0200
+
+routes (1.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Sat, 22 Jul 2006 15:30:09 +0200
+
+routes (1.3.2-3) unstable; urgency=low
+
+  * Updated to latest python policy (closes: #373377)
+  * Converted to python-central
+  * Removed setuptools_default_version patch
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Tue, 13 Jun 2006 23:58:48 +0200
+
+routes (1.3.2-2) unstable; urgency=low
+
+  * Egg directory name fixed
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Wed, 10 May 2006 18:38:59 +0200
+
+routes (1.3.2-1) unstable; urgency=low
+
+  * Initial release (closes: #366189)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Fri,  5 May 2006 23:43:00 +0200

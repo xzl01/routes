@@ -1,0 +1,21 @@
+From: SVN-Git Migration <python-modules-team@lists.alioth.debian.org>
+Date: Thu, 8 Oct 2015 13:43:57 -0700
+Subject: remove_missing_todo_include_from_docs
+
+Patch-Name: remove_missing_todo_include_from_docs.patch
+---
+ docs/index.rst | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/docs/index.rst b/docs/index.rst
+index 972c6fe..feabc11 100644
+--- a/docs/index.rst
++++ b/docs/index.rst
+@@ -65,7 +65,6 @@ Documentation
+    restful
+    uni_redirect_rest
+    changes
+-   todo
+ 
+ .. toctree::
+    :maxdepth: 1
