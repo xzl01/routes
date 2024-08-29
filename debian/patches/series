@@ -1,2 +1,3 @@
 remove_missing_todo_include_from_docs.patch
 drop_changes_from_description.patch
+fix-doc-build.patch

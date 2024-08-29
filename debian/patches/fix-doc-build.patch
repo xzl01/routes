@@ -1,0 +1,11 @@
+--- a/docs/conf.py
++++ b/docs/conf.py
+@@ -159,7 +159,7 @@ latex_documents = [
+ #latex_use_parts = False
+ 
+ # Additional stuff for the LaTeX preamble.
+-latex_preamble = '''
++latex_preamble = r'''
+ \usepackage{palatino}
+ \definecolor{TitleColor}{rgb}{0.7,0,0}
+ \definecolor{InnerLinkColor}{rgb}{0.7,0,0}
