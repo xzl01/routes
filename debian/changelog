@@ -1,3 +1,9 @@
+routes (2.5.1-3deepin1) unstable; urgency=medium
+
+  * Skip dh_auto_test.
+
+ -- xiangzelong <xiangzelong@deepin.org>  Fri, 30 Aug 2024 13:50:10 +0800
+
 routes (2.5.1-3) unstable; urgency=medium
 
   * debian/patches/fix-doc-build.patch

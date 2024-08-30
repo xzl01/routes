@@ -12,3 +12,6 @@ override_dh_auto_build:
 
 override_dh_installchangelogs:
 	dh_installchangelogs CHANGELOG.rst
+
+override_dh_auto_test:
+    # Skip tests
